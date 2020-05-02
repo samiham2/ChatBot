@@ -20,7 +20,7 @@ while True:
 			user = getUser(line)
 			message = getMessage(line)
 			print (user + " typed :" + message)
-			if "You Suck" in message:
+			if message[0] is '-' and message[1 : (len(message) - 1)] == 'music':
 				sendMessage(s, "No, you suck!")
 				break
 			
